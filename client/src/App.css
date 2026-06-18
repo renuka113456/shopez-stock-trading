@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f1f3f6;
+  color: #111;
+}
+
+/* HERO (optional if used) */
+.hero {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #131921;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* INPUTS */
+.navbar input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin: 0 6px;
+  width: 170px;
+  font-size: 14px;
+}
+
+/* NAV BUTTONS */
+.navbar button {
+  background: #ffb703;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.2s;
+  margin-left: 8px;
+}
+
+.navbar button:hover {
+  background: #ffa200;
+}
+
+/* CATEGORY */
+.categories {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.categories button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.categories button:hover {
+  background: #333;
+}
+
+/* PRODUCTS GRID */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  padding: 20px;
+}
+
+/* PRODUCT CARD */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 15px;
+  margin: 10px 0 5px;
+}
+
+.price {
+  color: #b12704;
+  font-weight: 700;
+}
+
+/* ADD TO CART BUTTON */
+.card button {
+  background: #2874f0;
+  border: none;
+  padding: 9px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 8px;
+  color: white;
+  transition: 0.2s;
+}
+
+.card button:hover {
+  background: #1f5fd1;
+}
+
+/* CHECKOUT PAGE */
+.checkout {
+  padding: 20px;
+}
+
+.checkoutItem {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* EMPTY STATE */
+.empty {
+  color: #777;
+  text-align: center;
+  padding: 10px;
+}
+
+/* BACK BUTTON (PRODUCT PAGE) */
+.backBtn {
+  margin: 15px;
+  padding: 8px 12px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.backBtn:hover {
+  background: #ccc;
+}
+
+/* PRODUCT PAGE */
+.page {
+  padding: 20px;
+}
+
+.productPage {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.productPage img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.productDetails {
+  flex: 1;
+}
+
+/* BUY BUTTON */
+.buyBtn {
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.buyBtn:hover {
+  background: darkgreen;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .productPage {
+    flex-direction: column;
+  }
+
+  .navbar input {
+    width: 120px;
+  }
+}
